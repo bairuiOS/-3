@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SortDetailCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="135"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10j-H2-2tT">
+                        <rect key="frame" x="10" y="10" width="113" height="115"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="10j-H2-2tT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="1ZB-In-MGk"/>
+                <constraint firstItem="10j-H2-2tT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Nzb-mR-LQX"/>
+                <constraint firstAttribute="trailing" secondItem="10j-H2-2tT" secondAttribute="trailing" constant="10" id="pPW-1P-Akp"/>
+                <constraint firstAttribute="bottom" secondItem="10j-H2-2tT" secondAttribute="bottom" constant="10" id="rXW-pv-ajN"/>
+            </constraints>
+            <size key="customSize" width="133" height="135"/>
+            <connections>
+                <outlet property="sortName" destination="10j-H2-2tT" id="6FA-lZ-amj"/>
+            </connections>
+            <point key="canvasLocation" x="279.5" y="429.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

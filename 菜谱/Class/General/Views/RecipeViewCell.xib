@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" rowHeight="143" id="KGk-i7-Jjw" customClass="RecipeViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18.png" translatesAutoresizingMaskIntoConstraints="NO" id="jq0-yw-Dcm">
+                        <rect key="frame" x="5" y="5" width="365" height="132"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_RecipeCell.png" translatesAutoresizingMaskIntoConstraints="NO" id="N6K-Kd-Iig">
+                        <rect key="frame" x="5" y="67" width="365" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="Lqo-Yi-snv"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18.png" translatesAutoresizingMaskIntoConstraints="NO" id="R6Z-70-5na">
+                        <rect key="frame" x="20" y="67" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="vZF-ol-Wq5"/>
+                            <constraint firstAttribute="width" secondItem="R6Z-70-5na" secondAttribute="height" multiplier="1:1" id="xhx-6I-aXZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜名" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-Cm-1Rp">
+                        <rect key="frame" x="97" y="85" width="263" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jq0-yw-Dcm" secondAttribute="bottom" constant="5" id="19h-bf-pcI"/>
+                    <constraint firstItem="jq0-yw-Dcm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="FZ6-Bs-tXX"/>
+                    <constraint firstAttribute="bottom" secondItem="R6Z-70-5na" secondAttribute="bottom" constant="15" id="GgL-rf-UzE"/>
+                    <constraint firstItem="DJQ-Cm-1Rp" firstAttribute="leading" secondItem="R6Z-70-5na" secondAttribute="trailing" constant="17" id="IlI-T2-v7d"/>
+                    <constraint firstItem="jq0-yw-Dcm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="KTt-8q-MUd"/>
+                    <constraint firstItem="N6K-Kd-Iig" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="OZL-3A-DpT"/>
+                    <constraint firstAttribute="trailing" secondItem="jq0-yw-Dcm" secondAttribute="trailing" constant="5" id="Xe0-2V-gHf"/>
+                    <constraint firstAttribute="trailing" secondItem="N6K-Kd-Iig" secondAttribute="trailing" constant="5" id="ddS-e3-Zcs"/>
+                    <constraint firstItem="R6Z-70-5na" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="if1-Ez-ZTN"/>
+                    <constraint firstAttribute="trailing" secondItem="DJQ-Cm-1Rp" secondAttribute="trailing" constant="15" id="ptJ-ZM-Oot"/>
+                    <constraint firstAttribute="bottom" secondItem="N6K-Kd-Iig" secondAttribute="bottom" constant="5" id="sfy-3K-Jfe"/>
+                    <constraint firstItem="DJQ-Cm-1Rp" firstAttribute="centerY" secondItem="R6Z-70-5na" secondAttribute="centerY" id="td5-zO-0Pg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="recipeImage" destination="jq0-yw-Dcm" id="gcw-ag-sYP"/>
+                <outlet property="recipeName" destination="DJQ-Cm-1Rp" id="kZk-fw-Hg2"/>
+                <outlet property="tinyImage" destination="R6Z-70-5na" id="UGa-zC-s2I"/>
+            </connections>
+            <point key="canvasLocation" x="328.5" y="391.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="18.png" width="1024" height="1024"/>
+        <image name="background_RecipeCell.png" width="624" height="130"/>
+    </resources>
+</document>
